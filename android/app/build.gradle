@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: 'io.fabric'
 
+
 import com.android.build.OutputFile
 
 /**
@@ -180,6 +181,8 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
