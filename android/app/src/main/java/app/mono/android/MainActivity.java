@@ -1,4 +1,4 @@
-package com.mono;
+package app.mono.android;
 
 import com.facebook.react.ReactActivity;
 

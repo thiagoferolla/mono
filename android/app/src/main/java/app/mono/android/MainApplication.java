@@ -1,4 +1,4 @@
-package com.mono;
+package app.mono.android;
 
 import android.app.Application;
 import android.content.Context;
