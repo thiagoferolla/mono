@@ -1,17 +1,16 @@
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {enableScreens} from 'react-native-screens';
 
-import TestGraphql from './src/test';
+enableScreens();
+
+import MainNavigator from './src/Navigators/MainNavigator';
 
 const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView
-        style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <TestGraphql />
-      </SafeAreaView>
-    </>
+    <NavigationContainer>
+      <MainNavigator />
+    </NavigationContainer>
   );
 };
 
